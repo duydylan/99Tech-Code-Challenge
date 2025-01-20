@@ -1,18 +1,17 @@
 {
-  "name": "99tech-interview-frontend",
+  "name": "99tech-code-challenge-frontend-duyduong",
+  "homepage": "https://duydylan.github.io/99tech-code-challenge-frontend-duyduong",
   "private": false,
   "author": "Duy Duong",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "start:dev": "vite --mode development --open",
-    "start:staging": "vite --mode staging --open",
-    "start:pro": "vite --mode production --open",
-    "build:dev": "vite build --mode development && tsc",
-    "build:staging": "vite build --mode staging && tsc",
-    "build:pro": "vite build --mode production && tsc",
+    "start": "vite --open",
+    "dev": "vite --open",
+    "build": "vite build && tsc",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
@@ -20,6 +19,7 @@
     "@tanstack/react-query": "^4.29.12",
     "antd": "^5.23.1",
     "dayjs": "^1.11.8",
+    "gh-pages": "^6.3.0",
     "lodash": "^4.17.21",
     "path": "^0.12.7",
     "query-string": "^8.1.0",
