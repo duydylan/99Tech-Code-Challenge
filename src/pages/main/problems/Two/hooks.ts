@@ -58,8 +58,8 @@ export const useGetCurrenciesFromUrl = () => {
 
     const { data: currencies } = useGetCurrencies();
 
-    const codeFromUrl = pathname.split('/')[2] || DEFAULT_CURRENCY_CODE;
-    const codeToUrl = pathname.split('/')[3] || DEFAULT_CURRENCY_CODE;
+    const codeFromUrl = pathname.split('/')[3] || DEFAULT_CURRENCY_CODE;
+    const codeToUrl = pathname.split('/')[4] || DEFAULT_CURRENCY_CODE;
 
     const codeFrom =
         currencies?.find(currency => currency.currency.toLowerCase() === codeFromUrl)?.currency ||

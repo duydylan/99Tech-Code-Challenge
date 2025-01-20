@@ -73,9 +73,11 @@ const Converter = () => {
                             />
                         }
                     />
-                    <Tooltip title="Swap">
-                        <ExchangeIcon onClick={handleSwap} />
-                    </Tooltip>
+                    <span onClick={handleSwap}>
+                        <Tooltip title="Swap">
+                            <ExchangeIcon />
+                        </Tooltip>
+                    </span>
                     <Input
                         label="Converted to"
                         value={amountTo}
