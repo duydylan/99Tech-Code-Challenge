@@ -17,7 +17,7 @@ export const Time = styled.div`
     display: flex;
     align-items: center;
     font-size: 14px;
-    color: ${theme.colorTab};
+    color: ${theme.colorGray};
     line-height: 1;
 `;
 export const Price = styled.span`
